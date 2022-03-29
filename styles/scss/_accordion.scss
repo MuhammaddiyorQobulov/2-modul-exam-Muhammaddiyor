@@ -1,0 +1,57 @@
+.accordion {
+  &-top {
+    @include flexMain(flex, center);
+    gap: 2vw;
+
+    img {
+      width: 40%;
+    }
+    &-left {
+      width: 36%;
+      color: $textColor;
+      h1 {
+        font-size: 3vw;
+      }
+      p {
+        font-size: 1.3vw;
+        line-height: 2vw;
+      }
+
+      button {
+        @include btnPrimary;
+        margin-top: 2vw;
+        font-size: 1.5vw;
+      }
+    }
+  }
+  &-text {
+    color: $textColor;
+    text-align: center;
+    h1 {
+      font-size: 3vw;
+    }
+    p {
+      font-size: 1.4vw;
+      padding: 0 20vw;
+      line-height: 2vw;
+      margin-top: 1vw;
+    }
+  }
+  &-main {
+    padding: 0 20vw;
+
+    button {
+      i {
+        color: $btnBgColor;
+        margin-right: 1vw;
+        font-size: 1.5vw;
+      }
+    }
+    h4{
+      text-align: center;
+      color: red;
+      font-size: 2vw;
+      margin-top: 2vw;
+    }
+  }
+}

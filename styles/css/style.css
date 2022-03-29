@@ -1,3 +1,312 @@
-body {
-    background-color: dodgerblue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.header .navbar-section {
+  padding: 2vw 6vw;
+  display: flex;
+  justify-content: space-between;
+}
+.header .navbar-section img {
+  width: 20vw;
+}
+.header .navbar-section > .contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5vw;
+}
+.header .navbar-section > .contacts i {
+  color: #e24329;
+  margin-right: 5px;
+}
+.header .navbar-section > .contacts button {
+  padding: 0.5vw 2vw;
+  background-color: #e24329;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #e24329;
+  text-align: center;
+}
+.header .navbar-section > .contacts button:hover {
+  background-color: #fff;
+  color: #e24329;
+}
+.header .header-section {
+  background-color: #e24329;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vw 6vw;
+}
+.header .header-section_text {
+  color: white;
+}
+.header .header-section_text h1 {
+  font-size: 3.5vw;
+}
+.header .header-section_text p {
+  font-size: 1.3vw;
+  line-height: 2vw;
+  margin-top: 2vw;
+}
+.header .header-section_text form {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 4vw;
+  margin-top: 3vw;
+}
+.header .header-section_text form input {
+  width: 70%;
+  border-radius: 6vw 0 0 6vw;
+  height: 100%;
+  padding-left: 1vw;
+  font-size: 1.3vw;
+}
+.header .header-section_text form button {
+  width: 30%;
+  height: 100%;
+  border-radius: 0 6vw 6vw 0;
+  background-color: #ff6a00;
+}
+.header .header-section .moto img {
+  width: 40vw;
+}
+.header .services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+.header .services .service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 6vw;
+  border-radius: 0.7vw;
+  margin-top: -2.5vw;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px gray;
+  line-height: 1vw;
+  gap: 0 0.9vw;
+}
+.header .services .service img {
+  width: 25%;
+}
+.header .services .service h3 {
+  font-size: 1.2vw;
+}
+.header .services .service p {
+  font-size: 1vw;
+}
+
+.choose {
+  padding: 5vw;
+  text-align: center;
+}
+.choose h1 {
+  font-size: 3vw;
+  color: #444b51;
+}
+.choose p {
+  font-size: 1.4vw;
+  color: #444b51;
+}
+.choose .courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  justify-content: center;
+  margin: 5vw;
+}
+.choose .courses .course:nth-of-type(2n+1) {
+  background: #ffecf1;
+}
+.choose .courses .course:nth-of-type(2n) {
+  background: #ecedff;
+}
+.choose .courses .course:nth-of-type(4n+2) {
+  background: #fffaec;
+}
+.choose .courses .course {
+  width: 22vw;
+  padding: 1vw 0.5vw;
+  border-radius: 1vw;
+}
+.choose .courses .course img {
+  width: 25%;
+}
+.choose .courses .course h4 {
+  font-size: 1.8vw;
+}
+.choose .courses .course p {
+  font-size: 1.3vw;
+}
+
+.accordion-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.accordion-top img {
+  width: 40%;
+}
+.accordion-top-left {
+  width: 36%;
+  color: #444b51;
+}
+.accordion-top-left h1 {
+  font-size: 3vw;
+}
+.accordion-top-left p {
+  font-size: 1.3vw;
+  line-height: 2vw;
+}
+.accordion-top-left button {
+  padding: 0.5vw 2vw;
+  background-color: #e24329;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #e24329;
+  text-align: center;
+  margin-top: 2vw;
+  font-size: 1.5vw;
+}
+.accordion-top-left button:hover {
+  background-color: #fff;
+  color: #e24329;
+}
+.accordion-text {
+  color: #444b51;
+  text-align: center;
+}
+.accordion-text h1 {
+  font-size: 3vw;
+}
+.accordion-text p {
+  font-size: 1.4vw;
+  padding: 0 20vw;
+  line-height: 2vw;
+  margin-top: 1vw;
+}
+.accordion-main {
+  padding: 0 20vw;
+}
+.accordion-main button i {
+  color: #e24329;
+  margin-right: 1vw;
+  font-size: 1.5vw;
+}
+.accordion-main h4 {
+  text-align: center;
+  color: red;
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+
+.clients {
+  margin-top: 8vw;
+}
+.clients h1 {
+  font-size: 3.5vw;
+  color: #444b51;
+  text-align: center;
+}
+.clients > p {
+  text-align: center;
+  color: #444b51;
+  padding: 0 30vw;
+  font-size: 1vw;
+}
+.clients .logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vw 0;
+}
+.clients .logos img {
+  width: 10%;
+}
+.clients .girl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+.clients .girl > img {
+  width: 35%;
+}
+.clients .girl-left {
+  width: 50%;
+}
+.clients .girl-left img {
+  width: 10%;
+}
+.clients .girl-left i {
+  font-size: 2vw;
+  color: #e24329;
+  padding: 3vw 0.3vw;
+}
+.clients .girl-left p {
+  font-size: 1.2vw;
+  color: #444b51;
+}
+.clients .girl-left h4 {
+  color: #e24329;
+  font-size: 2vw;
+}
+.clients .partner {
+  width: 80vw;
+  margin: 10vw;
+  background-color: #fde0dc;
+  text-align: center;
+  padding: 5vw 0;
+  border-radius: 20px;
+}
+.clients .partner p {
+  font-size: 1.4vw;
+  color: #444b51;
+  line-height: 2.5vw;
+}
+.clients .partner button {
+  padding: 0.5vw 2vw;
+  background-color: #e24329;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #e24329;
+  text-align: center;
+  background-color: white;
+  color: #e24329;
+  font-weight: 600;
+  padding: 0.8vw 3.5vw;
+  margin-top: 2vw;
+}
+.clients .partner button:hover {
+  background-color: #fff;
+  color: #e24329;
+}
+
+.carousel .active {
+  display: flex !important;
+  gap: 2vw;
+}
+.carousel .active .carousel-inner-part {
+  margin-left: 5vw;
+}
+.carousel .active .carousel-inner-part img {
+  width: 100% !important;
+}
+
+.applications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

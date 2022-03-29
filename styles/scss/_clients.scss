@@ -1,0 +1,70 @@
+.clients {
+  margin-top: 8vw;
+  h1 {
+    font-size: 3.5vw;
+    color: $textColor;
+    text-align: center;
+  }
+  & > p {
+    text-align: center;
+    color: $textColor;
+    padding: 0 30vw;
+    font-size: 1vw;
+  }
+  .logos {
+    @include flexMain($j-content: space-around);
+    padding: 2vw 0;
+    img {
+      width: 10%;
+    }
+  }
+  .girl {
+    @include flexMain($j-content: center);
+    gap: 4vw;
+    & > img {
+      width: 35%;
+    }
+
+    &-left {
+      width: 50%;
+
+      img {
+        width: 10%;
+      }
+      i {
+        font-size: 2vw;
+        color: $btnBgColor;
+        padding: 3vw 0.3vw;
+      }
+      p {
+        font-size: 1.2vw;
+        color: $textColor;
+      }
+      h4 {
+        color: $btnBgColor;
+        font-size: 2vw;
+      }
+    }
+  }
+  .partner {
+    width: 80vw;
+    margin: 10vw;
+    background-color: #fde0dc;
+    text-align: center;
+    padding: 5vw 0;
+    border-radius: 20px;
+    p {
+      font-size: 1.4vw;
+      color: $textColor;
+      line-height: 2.5vw;
+    }
+    button {
+      @include btnPrimary;
+      background-color: white;
+      color: $btnBgColor;
+      font-weight: 600;
+      padding: 0.8vw 3.5vw;
+      margin-top: 2vw;
+    }
+  }
+}

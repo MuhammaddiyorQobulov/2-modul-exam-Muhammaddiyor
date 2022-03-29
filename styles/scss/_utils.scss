@@ -1,0 +1,28 @@
+$btnBgColor: rgba(226, 67, 41, 1);
+$textColor: rgba(68, 75, 81, 1);
+
+@mixin flexMain($display: flex, $j-content: center) {
+  display: $display;
+  justify-content: $j-content;
+  align-items: center;
+}
+
+@mixin btnPrimary() {
+  padding: 0.5vw 2vw;
+  background-color: $btnBgColor;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid $btnBgColor;
+  text-align: center;
+
+  &:hover {
+    background-color: #fff;
+    color: $btnBgColor;
+  }
+}
+
+@mixin courses($var: 3) {
+  display: grid;
+  grid-template-columns: repeat($var, 1fr);
+  gap: 2vw;
+}
